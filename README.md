@@ -10,4 +10,5 @@ https://www.figma.com/proto/Fk3rIvw89Xbr6tQTvpgk2L/Bort?page-id=2607%3A11987&nod
  - cтатический HTML, SCSS
  - слайдер
 
-# Запуск на локальном сервере, например, через Live Server
+# Запуск 
+На локальном сервере, например, через Live Server
