@@ -35,5 +35,15 @@ embed{
 .container{
   max-width: 1230px;
   margin: auto;
-  border: 1px solid red;
+}
+
+.owl-next, .owl-prev{
+  border: none;
+  background-color: inherit;
+}
+
+@media screen and ( max-width: 1300px ){
+  .container{
+    max-width: 90%;
+}
 }
