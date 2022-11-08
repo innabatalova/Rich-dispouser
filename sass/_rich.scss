@@ -1,0 +1,183 @@
+.rich{
+  position: relative;
+  top: -5px;
+  background-color: $white;
+
+  &-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__info{
+      max-width: 815px;
+      margin: auto;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    &__title{
+      margin-bottom: 25px;
+      @include primary-font;
+      font-size: 35px;
+      line-height: 130%;
+      color: $orange;
+    }
+
+    &__text{
+      margin-bottom: 25px;
+      @include secondary-font;
+      font-size: 24px;
+      color: $black;
+    }
+
+    &__subtext{
+      @include secondary-font;
+      font-size: 18px;
+      color: $black;
+      opacity: 0.7;
+    }
+
+    &__img{
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  &-card{
+    display: flex;
+    padding-top: 150px;
+
+    &__info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      order: 2;
+      padding-left: 25px;
+      padding-right: 25px;
+
+      &_reverse{
+        order: 1;
+      }
+    }
+
+    &__title{
+      max-width: 500px;
+      @include primary-font;
+      font-size: 35px;
+      line-height: 130%;
+      color: $orange;
+    }
+
+    &__text{
+      max-width: 500px;
+      @include secondary-font;
+      font-size: 18px;
+      color: $black;
+      opacity: 0.7;
+    }
+
+    &__img{
+      order: 1;
+      width: 40%;
+
+      &_reverse{
+        order: 2;
+      }
+    }
+  }
+
+  &::after{
+    content: url(../img/bg-after.svg);
+    position: absolute;
+    top: -650px;
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  &::before{
+    content: url(../img/bg-after.svg);
+    position: absolute;
+    bottom: 250px;
+    left: 0;
+  }
+}
+
+@media screen and ( max-width: 1300px ){
+
+  .rich{
+
+    &-card{
+      padding-top: 40px;
+
+      &__info{
+        text-align: end;
+        align-items: flex-end;
+
+        &_reverse{
+          text-align: start;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@media screen and ( max-width: 1170px ){
+  .rich{
+
+    &-card{
+      flex-direction: column-reverse;
+      padding-top: 0;
+      margin-bottom: 20px;
+
+      &__info{
+        text-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &_reverse{
+          order: 2;
+        }
+      }
+
+      &__img{
+        width: 100%;
+
+        img{
+          width: 100%;
+        }
+
+        &_reverse{
+          order: 1;
+        }
+      }
+
+    }
+  }
+
+}
+
+@media screen and ( max-width: 575px ){
+
+  .rich{
+
+    &-top, &-card{
+
+      &__title{
+        font-size: 30px;
+      }
+
+      &__text{
+        font-size: 18px;
+      }
+
+      &__subtext{
+        font-size: 16px;
+      }
+    }
+  }
+}

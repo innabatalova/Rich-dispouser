@@ -7,7 +7,7 @@
     content: '';
     position: absolute;
     top: 0;
-    bottom: -500px;
+    bottom: 0;
     left: 0;
     right: 0;
     background: linear-gradient(180deg, #16151A 0%, rgba(22, 21, 26, 0.991353) 6.67%, rgba(22, 21, 26, 0.96449) 13.33%, rgba(22, 21, 26, 0.91834) 20%, rgba(22, 21, 26, 0.852589) 26.67%, rgba(22, 21, 26, 0.768225) 33.33%, rgba(22, 21, 26, 0.668116) 40%, rgba(22, 21, 26, 0.557309) 46.67%, rgba(22, 21, 26, 0.442691) 53.33%, rgba(22, 21, 26, 0.331884) 60%, rgba(22, 21, 26, 0.231775) 66.67%, rgba(22, 21, 26, 0.147411) 73.33%, rgba(22, 21, 26, 0.0816599) 80%, rgba(22, 21, 26, 0.03551) 86.67%, rgba(22, 21, 26, 0.0086472) 93.33%, rgba(22, 21, 26, 0) 100%);
@@ -32,9 +32,7 @@
       padding-top: 10px;
       padding-left: 5px;
       padding: 1px; 
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 300;
+      @include secondary-font;
       line-height: 150%;
       color: $white;
     }
@@ -64,6 +62,10 @@
     &__img{
       width: 58%;
       padding-right: 2px;
+
+      img{
+        max-height: 475px;
+      }
     }
   }
 }
@@ -113,6 +115,12 @@
         width: 100%;
       }
     }
+  }
+}
+
+@media screen and ( max-width: 575px ){
+  .slider-top{
+    padding-bottom: 250px;
   }
 }
 
