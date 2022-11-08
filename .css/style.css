@@ -321,7 +321,7 @@ a {
   color: inherit;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   padding: 0;
   margin: 0;
 }
@@ -887,6 +887,7 @@ embed {
 @media screen and (max-width: 575px) {
   .slider-bottom {
     padding-top: 80px;
+    padding-bottom: 50px;
   }
   .slider-bottom__description {
     padding-bottom: 30px;
@@ -945,5 +946,112 @@ embed {
   }
   .media__video {
     height: 230px;
+  }
+}
+.banner {
+  position: relative;
+  top: -5px;
+  background-color: #FFFFFF;
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 570px;
+  background: url(../../img/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  padding-left: 100px;
+  padding-top: 120px;
+}
+.banner-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.banner__info {
+  display: flex;
+  flex-direction: column;
+}
+.banner__title {
+  position: relative;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 51px;
+  line-height: 61px;
+  color: #FFFFFF;
+  z-index: 5;
+  margin-bottom: 15px;
+}
+.banner__title_model {
+  color: #D9760F;
+}
+.banner__text {
+  position: relative;
+  margin-bottom: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 24px;
+  color: #FFFFFF;
+  z-index: 5;
+}
+.banner__button {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  padding: 15px 60px;
+  background-color: #D9760F;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #FFFFFF;
+  border: 1px solid #D9760F;
+  z-index: 5;
+}
+.banner__button:focus, .banner__button:hover, .banner__button:active {
+  color: #FFFFFF;
+  background-color: #E78826;
+  border: 1px solid #E78826;
+}
+
+@media screen and (max-width: 1100px) {
+  .banner {
+    padding-top: 10px;
+  }
+  .banner-wrapper {
+    height: auto;
+    padding-bottom: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .banner-wrapper {
+    background-position-x: -150px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .banner-wrapper {
+    background-position-x: 0;
+    padding: 30px 15px;
+  }
+  .banner__title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .banner__text {
+    font-size: 18px;
+  }
+  .banner__button {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
