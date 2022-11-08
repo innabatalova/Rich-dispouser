@@ -832,6 +832,7 @@ embed {
 }
 .slider-bottom {
   position: relative;
+  bottom: -5px;
   padding-top: 150px;
   padding-bottom: 150px;
   background-color: #FFFFFF;
@@ -895,5 +896,54 @@ embed {
   }
   .slider-bottom::after, .slider-bottom::before {
     display: none;
+  }
+}
+.media {
+  padding-bottom: 75px;
+  background-color: #FFFFFF;
+}
+.media__title {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #D9760F;
+}
+.media__text {
+  max-width: 815px;
+  margin: auto;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+  opacity: 0.7;
+  margin-bottom: 80px;
+}
+.media__video {
+  width: 100%;
+  height: 630px;
+}
+
+@media screen and (max-width: 900px) {
+  .media__video {
+    height: 430px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .media__title {
+    font-size: 30px;
+  }
+  .media__text {
+    font-size: 18px;
+  }
+  .media__video {
+    height: 230px;
   }
 }/*# sourceMappingURL=style.css.map */
