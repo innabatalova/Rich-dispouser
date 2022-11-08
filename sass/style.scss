@@ -3,8 +3,10 @@
 @import '_mixin';
 @import '_setting';
 
-@import './sections/_video';
+@import './sections/_background-video';
+@import './sections/_carousel';
 @import './sections/_presentation';
 @import './sections/_slider-top';
 @import './sections/_rich';
 @import './sections/_complectation';
+@import './sections/_slider-bottom';
