@@ -67,13 +67,6 @@
   }
 }
 
-#myVideo{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 150%;
-  z-index: -1;
-}
 
 @media screen and ( max-width: 1100px ){
 
@@ -84,9 +77,6 @@
     }
   }
 
-  #myVideo{
-    width: 250%;
-  }
 }
 
 @media screen and ( max-width: 650px ){
@@ -105,9 +95,5 @@
       transform: translate(-50%, -65%);
     }
   }
-
-    #myVideo{
-    width: 500%;
-   }
 
 }

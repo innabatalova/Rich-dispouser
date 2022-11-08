@@ -1,0 +1,40 @@
+#myVideo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150%;
+  z-index: -1;
+}
+
+@media screen and ( max-width: 1300px ){
+
+  #myVideo{
+    width: 300%;
+  }
+}
+
+@media screen and ( max-width: 1100px ){
+
+  #myVideo{
+    width: 280%;
+  }
+}
+
+@media screen and ( max-width: 740px ){
+
+  #myVideo{
+    width: 350%;
+  }
+}
+
+@media screen and ( max-width: 650px ){
+  #myVideo{
+    width: 500%;
+  }
+}
+
+@media screen and ( max-width: 470px ){
+  #myVideo{
+    width: 650%;
+  }
+}
