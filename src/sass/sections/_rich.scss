@@ -92,7 +92,7 @@
   }
 
   &::after{
-    content: url(../img/bg-after.svg);
+    content: url(http://localhost:3000/assets/image/bg-after.svg);
     position: absolute;
     top: -650px;
     right: 0;
@@ -100,7 +100,7 @@
   }
 
   &::before{
-    content: url(../img/bg-after.svg);
+    content: url(http://localhost:3000/assets/image/bg-after.svg);
     position: absolute;
     bottom: 250px;
     left: 0;

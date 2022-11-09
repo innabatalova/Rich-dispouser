@@ -1,3 +1,5 @@
+const $ = require("jquery");
+
 $(document).ready(function(){
   $(".carousel-top").owlCarousel();
 });
@@ -16,8 +18,8 @@ $(".carousel-top").owlCarousel({
     smartSpeed: 850,
     navContainer: ".carousel-item__nav_top",
     navText: [
-      "<img src='img/arrow-top.svg' class='carousel-top__prev'>",
-      "<img src='img/arrow-top.svg' class='carousel-top__next'>",
+      "<img src='../assets/image/arrow-top.svg' class='carousel-top__prev'>",
+      "<img src='../assets/image/arrow-top.svg' class='carousel-top__next'>",
     ],
     responsive: {
       320: {
@@ -41,8 +43,8 @@ $(".carousel-bottom").owlCarousel({
     smartSpeed: 850,
     navContainer: ".carousel-item__nav_bottom",
     navText: [
-      "<img src='img/arrow-bottom.svg' class='carousel-bottom__prev'>",
-      "<img src='img/arrow-bottom.svg' class='carousel-bottom__next'>",
+      "<img src='../assets/image/arrow-bottom.svg' class='carousel-bottom__prev'>",
+      "<img src='../assets/image/arrow-bottom.svg' class='carousel-bottom__next'>",
     ],
     responsive: {
       320: {
