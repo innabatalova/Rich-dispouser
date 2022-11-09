@@ -10,6 +10,8 @@ import richTop from "../img/rich-top.jpg";
 import sliderImg1 from "../img/slider-img-1.jpg";
 import sliderImg2 from "../img/slider-img-2.jpg";
 
+import videoBG from "../img/mixkit-bubbling-water-in-slow-motion-182-large.mp4";
+
 export default 
 arrowBottom
 arrowTop,
@@ -21,4 +23,6 @@ presentationImg,
 richCard,
 richTop,
 sliderImg1,
-sliderImg2;
+sliderImg2,
+
+videoBG;
