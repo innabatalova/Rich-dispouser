@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Russo+One&display=swap"); /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -356,38 +356,18 @@ embed {
   }
 }
 #myVideo {
-  position: fixed;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+#myVideo iframe {
+  position: absolute;
   top: 0;
   left: 0;
-  width: 150%;
-  z-index: -1;
+  pointer-events: none;
 }
 
-@media screen and (max-width: 1300px) {
-  #myVideo {
-    width: 300%;
-  }
-}
-@media screen and (max-width: 1100px) {
-  #myVideo {
-    width: 280%;
-  }
-}
-@media screen and (max-width: 740px) {
-  #myVideo {
-    width: 350%;
-  }
-}
-@media screen and (max-width: 650px) {
-  #myVideo {
-    width: 500%;
-  }
-}
-@media screen and (max-width: 470px) {
-  #myVideo {
-    width: 650%;
-  }
-}
 .carousel-item {
   display: flex;
   justify-content: space-between;
@@ -464,11 +444,9 @@ embed {
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 10px;
-  -webkit-text-stroke: 1.3px #000000;
 }
 .presentation__title_model {
   color: #D9760F;
-  -webkit-text-stroke: 1.3px #D9760F;
 }
 .presentation__info {
   font-family: "Roboto";
@@ -503,6 +481,10 @@ embed {
   color: #FFFFFF;
   cursor: pointer;
 }
+.presentation__arrow a {
+  display: inline-block;
+  height: 50px;
+}
 .presentation__arrow::after {
   content: "";
   position: absolute;
@@ -510,7 +492,8 @@ embed {
   left: 35%;
   width: 40px;
   height: 40px;
-  background: url(../img/arrow-top.svg) no-repeat;
+  background: url(http://localhost:3000/assets/image/arrow-top.svg) no-repeat;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1100px) {
@@ -672,14 +655,14 @@ embed {
   order: 2;
 }
 .rich::after {
-  content: url(../img/bg-after.svg);
+  content: url(http://localhost:3000/assets/image/bg-after.svg);
   position: absolute;
   top: -650px;
   right: 0;
   transform: rotate(180deg);
 }
 .rich::before {
-  content: url(../img/bg-after.svg);
+  content: url(http://localhost:3000/assets/image/bg-after.svg);
   position: absolute;
   bottom: 250px;
   left: 0;
@@ -848,7 +831,7 @@ embed {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
 }
 .slider-bottom::before {
-  content: url(../img/bg-after.svg);
+  content: url(http://localhost:3000/assets/image/bg-after.svg);
   position: absolute;
   top: 0;
   right: 0;
@@ -959,7 +942,7 @@ embed {
   position: relative;
   width: 100%;
   height: 570px;
-  background: url(../../img/banner-bg.jpg) no-repeat;
+  background: url(http://localhost:3000/assets/image/banner-bg.jpg) no-repeat;
   background-size: cover;
   padding-left: 100px;
   padding-top: 120px;
@@ -1024,6 +1007,37 @@ embed {
 }
 
 @media screen and (max-width: 1100px) {
+  .banner {
+    padding-top: 10px;
+  }
+  .banner-wrapper {
+    height: auto;
+    padding-bottom: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .banner-wrapper {
+    background-position-x: -150px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .banner-wrapper {
+    background-position-x: 0;
+    padding: 30px 15px;
+  }
+  .banner__title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .banner__text {
+    font-size: 18px;
+  }
+  .banner__button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */dth: 1100px) {
   .banner {
     padding-top: 10px;
   }

@@ -20,4 +20,4 @@ https://www.figma.com/proto/Fk3rIvw89Xbr6tQTvpgk2L/Bort?page-id=2607%3A11987&nod
  - npm run start - запуск
 
 # Деплой
-https://thriving-pudding-277cdd.netlify.app/
+https://singular-churros-9b83b7.netlify.app/
