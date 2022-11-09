@@ -12,14 +12,11 @@
     font-size: 91px;
     line-height: 110px;
     color: $white;
-    //color: $grey;
     text-align: center;
     margin-bottom: 10px;
-    -webkit-text-stroke: 1.3px #000000;
 
     &_model{
         color: $orange;
-        -webkit-text-stroke: 1.3px $orange;
     }
   }
 
@@ -55,6 +52,11 @@
     color: $white;
     cursor: pointer;
 
+    a {
+      display: inline-block;
+      height: 50px;
+    }
+
     &::after{
       content: '';
       position: absolute;
@@ -63,6 +65,7 @@
       width: 40px;
       height: 40px;
       background: url(http://localhost:3000/assets/image/arrow-top.svg) no-repeat;
+      z-index: -1;
     }
   }
 }

@@ -8,10 +8,16 @@ https://www.figma.com/proto/Fk3rIvw89Xbr6tQTvpgk2L/Bort?page-id=2607%3A11987&nod
 # Используются
  - cтатический HTML, SCSS
  - слайдер
+ - сборщик Webpack
 
 # Запуск 
 На локальном сервере, например, через Live Server
-Или на ветке deploy на порту 3000.
+
+На порту 3000:
+ - npm run install - установка зависимостей
+ - npm run build - сборка проекта
+ - npm run dev - режим разработки
+ - npm run start - запуск
 
 # Деплой
 https://thriving-pudding-277cdd.netlify.app/
