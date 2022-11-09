@@ -11,6 +11,7 @@ https://www.figma.com/proto/Fk3rIvw89Xbr6tQTvpgk2L/Bort?page-id=2607%3A11987&nod
 
 # Запуск 
 На локальном сервере, например, через Live Server
+Или на ветке deploy на порту 3000
 
 # Деплой
 https://tourmaline-creponne-730f21.netlify.app/
