@@ -19,6 +19,14 @@
       color: $white;
     }
 
+    &__title{
+      text-align: center;
+      @include primary-font;
+      font-size: 35px;
+      line-height: 130%;
+      color: $orange;
+    }
+
     &__description{
       font-size: 24px;
     }
