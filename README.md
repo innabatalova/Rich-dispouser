@@ -20,4 +20,4 @@ https://www.figma.com/proto/Fk3rIvw89Xbr6tQTvpgk2L/Bort?page-id=2607%3A11987&nod
  - npm run start - запуск
 
 # Деплой
-https://teal-platypus-2a1026.netlify.app/
+https://heartfelt-ganache-9e2f44.netlify.app
